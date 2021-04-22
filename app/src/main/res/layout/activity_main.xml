@@ -8,7 +8,7 @@
     android:id="@+id/rvActivity">
 
     <TextView
-        android:id="@+id/txtSo"
+        android:id="@+id/txtNumber"
         android:text="0"
         android:textSize="100dp"
         android:layout_centerInParent="true"
@@ -18,7 +18,7 @@
     <Button
         android:id="@+id/btnTru"
         android:backgroundTint="@color/teal_200"
-        android:layout_below="@+id/txtSo"
+        android:layout_below="@+id/txtNumber"
         android:text="-"
         android:textSize="50dp"
         android:textColor="@color/red"
@@ -29,7 +29,7 @@
     <Button
         android:id="@+id/btnCong"
         android:backgroundTint="@color/teal_200"
-        android:layout_below="@+id/txtSo"
+        android:layout_below="@+id/txtNumber"
         android:layout_alignParentRight="true"
         android:layout_marginRight="30dp"
         android:text="+"
