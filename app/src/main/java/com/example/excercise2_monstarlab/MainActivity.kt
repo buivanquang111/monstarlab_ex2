@@ -97,6 +97,7 @@ class MainActivity : AppCompatActivity() {
         var action = m.actionMasked
         when(action){
             MotionEvent.ACTION_DOWN -> {
+                mHandler.removeCallbacks(backZero)
                 y= m.getY().toInt()
             }
             MotionEvent.ACTION_MOVE -> {
@@ -108,6 +109,10 @@ class MainActivity : AppCompatActivity() {
                     number = number!! + 1
                     txtNumber.text = number.toString()
                     randomColor(number!!)
+                }
+                else {
+                    number=number
+                    txtNumber.text = number!!.toString()
                 }
                 y = m.getY().toInt()
             }
